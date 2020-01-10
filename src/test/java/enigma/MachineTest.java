@@ -31,5 +31,11 @@ public class MachineTest {
 		String actual = m.convert(msg2);
 		assertEquals(expected, actual);
 	}
+        
+        @Test
+        public void testMsgUppercase(){
+            Machine m = new Machine();
+            Main.configure(m, config);
+        }
 
 }
