@@ -7,6 +7,7 @@ public class Reflector extends Rotor {
 	
 	int[] reflection;
 	
+        //Constructor
 	public static Reflector reflectorFactory(String str){
 		char[] s = str.trim().replace(" ", "").toCharArray();
 		int[] cipher = new int[26];
@@ -19,7 +20,7 @@ public class Reflector extends Rotor {
 	private Reflector(int[] r){
 		reflection = r;
 	}
-        
+    //Fonction "converForward" convertissant le reflector    
     public int convertForward(int p) {
         return ((reflection[((p)%26+26)%26])%26+26)%26;
     }

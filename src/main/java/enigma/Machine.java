@@ -7,13 +7,14 @@ public class Machine {
 	private Rotor rightRotor;
 	private Reflector reflector;
 
+        //Constructor, initialise les rotors de la machine
 	public void initRotors(Reflector reflector, Rotor left, Rotor middle, Rotor right) {
 		this.reflector = reflector;
 		leftRotor = left;
 		middleRotor = middle;
 		rightRotor = right;
 	}
-
+        //Setter
 	public void setPositions(String setting) {
 		char[] charSettings = setting.toCharArray();
 		reflector.setPosition(Rotor.toIndex(charSettings[0]));
@@ -22,12 +23,17 @@ public class Machine {
 		rightRotor.setPosition(Rotor.toIndex(charSettings[3]));
 	}
 	
+        //Fonction de configuration "configure" composé d'un reflector, de plusieurs rotors 
+        //et d'une phrase de configuration 
+        //+
+        //Initialise les rotors et positionne les éléments dans une chaîne de caractrères
 	public void configure(Reflector reflector, Rotor left, Rotor middle, Rotor right, String setting) {
 		this.initRotors(reflector, left, middle, right);
 		this.setPositions(setting);
 
 	}
-
+        
+        //Fonction convertissant en majuscules les caractères en minuscules
 	public String convert(String msg) {
 		msg = msg.toUpperCase();
 		char[] msgChars = msg.toCharArray();
@@ -52,7 +58,7 @@ public class Machine {
 		return Rotor.toLetter(output);
 
 	}
-
+        
 	void advanceRotors() {
 		boolean advanceLeft = false;
 		boolean advanceMiddle = false;
