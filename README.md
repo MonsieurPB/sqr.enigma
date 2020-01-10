@@ -17,8 +17,14 @@ Hereafter, for each classes give function to be tested
 
 ### Classe Machine
 #### functions
-initRotors
-setPositions
+1) Tests à effectuer sur la fonction initRotors :
+-Pouvoir tester si les élément sont égaux à ceux donné (* B III IV)
+
+2) Tests à effectuer sur la fonction setPositions :
+-Vérifier si les éléments se plaçent suivant leur indice, par exemple :
+"Je test si à l'indice [0], se trouve le reflector ou pas"
+
+3) 
 configure
 convert
 
