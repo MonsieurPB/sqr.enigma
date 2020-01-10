@@ -20,7 +20,7 @@ public class RotorTest {
     
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		//FAIRE UN TEST SUR LA FONCTION ADVANCE()
 	}
 
 }
