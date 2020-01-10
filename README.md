@@ -30,16 +30,16 @@ Il n'est pas jugé utile d'effectuer des tests car ceux-ci seront réaliser sépare
 pour chaque fonction.
 
 4) Tests pour la fonction convert :
--Vérifier si la fonction converti bien la chaîne en MAJUSCULES
+-Vérifier si la fonction converti bien la chaîne et retourne la bonne chaîne
 
 
 ### Classe Reflector
 #### function
 1) Tests sur la fonction reflectorFactory :
--
+-Méthode principale de la classe, à tester
 
 2) Tests sur la fonction convertForward :
--
+-Pas pertinent de faire des tests pour cette fonction
 
 3) Tests sur la fonction convertBackward :
 -On peut tester si l'exception est bien relevée 

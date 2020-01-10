@@ -33,7 +33,9 @@ public class Machine {
 
 	}
         
-        //Fonction convertissant en majuscules les caractères en minuscules
+        //Fonction convertissant en majuscules la chaîne de caractères
+        //+
+        //Transforme la chaîne en une liste de caractères
 	public String convert(String msg) {
 		msg = msg.toUpperCase();
 		char[] msgChars = msg.toCharArray();
