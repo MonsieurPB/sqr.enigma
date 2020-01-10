@@ -24,22 +24,36 @@ Hereafter, for each classes give function to be tested
 -Vérifier si les éléments se plaçent suivant leur indice, par exemple :
 "Je test si à l'indice [0], se trouve le reflector ou pas"
 
-3) 
-configure
-convert
+3) Tests sur la fonction configure :
+-La fonction fait appel à deux autres fonctions, initRotors et setPositions.
+Il n'est pas jugé utile d'effectuer des tests car ceux-ci seront réaliser séparemment 
+pour chaque fonction.
+
+4) Tests pour la fonction convert :
+-Vérifier si la fonction converti bien la chaîne en MAJUSCULES
+
 
 ### Classe Reflector
 #### function
-reflectorFactory
-convertForward
-convertBackward
+1) Tests sur la fonction reflectorFactory :
+-
+
+2) Tests sur la fonction convertForward :
+-
+
+3) Tests sur la fonction convertBackward :
+-On peut tester si l'exception est bien relevée 
 
 ### Classe Rotor
 #### function
-rotorFactory
-convertForward
-convertBackward
-advance
+1) Tests sur la fonction rotorFactory :
+-Vérifier les cas "IF : s.length == 2"
+
+2) Tests sur les fonctions convertForward et convertBackward :
+-
+
+3) Tests sur la fonction advance :
+-Effectuer un test pour savoir si le rotor change bien de position
 
 ## Tricks & tips
 
